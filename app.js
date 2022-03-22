@@ -1,13 +1,14 @@
-function getUrl()
-{
-    $n = 10;
-    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $randomString = '';
+p = document.getElementById("id");
+function getUrl(){
+    const n = 10;
+    const characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var randomString = '';
 
-    for ($i = 0; $i < $n; $i++) {
-        $index = rand(0, strlen($characters) - 1);
-        $randomString .= $characters[$index];
+    for (i = 0; i < n; i++) {
+        var index = Math.random(0, (characters.length) - 1);
+        randomString = characters[index];
     }
-
-    return $randomString;
+    console.log(randomString);
+    p.innerText = randomString;
 }
+
