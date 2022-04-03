@@ -5,29 +5,27 @@ var uppercase = document.getElementById('uppercase');
 var lowercase = document.getElementById('lowercase');
 var output = document.getElementById('passwordShow');
 
-var isChecked = document.getElementsByName('password');
-var Values = document.getElementsByClassName('values').value;
-var characters = [];
-for (var i=0; i<isChecked.length; i++) {
-    if (isChecked[i].checked) {
-        
-        characters.push(Values[i].value);
-        console.log(characters);
+
+function generatePassword() {
+    var isChecked = document.getElementsByName('password');
+    const characters = [];
+    for (var i = 0; i < isChecked.length; i++) {
+        if (isChecked[i].checked) {
+            characters.push(isChecked[i].value);
+        }
     }
-}
-
-
-function generatePassword(){
+    const stringChar = characters.toString();
+    console.log(stringChar);
     n = PasswordRange.value;
-
-    let password = ' ';
-    const charactersLength = characters.length;
-    for ( let i = 0; i < n; i++ ) {
-        password += characters.charAt(Math.floor(Math.random() * charactersLength));
+    let password = '';
+    for ( let i = 0; i<n; i++ ) {
+        password += stringChar.charAt(Math.floor(Math.random() * stringChar.length));
     }
-    return password;
-}
-    console.log(index);
-    output.value = generatePassword();
+    output.value = password;
+    console.log(password);
+    }
+    
 
 
+
+    
