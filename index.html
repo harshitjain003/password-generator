@@ -5,118 +5,118 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="harshit jain, passowrd generate, generate, passwords, online password">
+    <meta name="keywords" content="harshit jain, passowrd generate">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css " rel="stylesheet " integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC " crossorigin="anonymous ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Password Generator by Harshit Jain</title>
-    <link rel="stylesheet " href="style.css ">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="container p-2 ">
-    <div class="main-box mt-3 p-4 mb-4 ">
+<body class="container p-2">
+    <div class="main-box mt-3 p-4 mb-4">
         <h2>Secure Password Generator</h2>
         <hr>
         <!-- Password Range Input -->
-        <div class="mb-3 mt-3 row ">
-            <label for="passwordRange " class="col-sm-2 col-form-label ">Select Password Range : </label>
-            <div class="col-sm-10 ">
-                <select id="passwordRange " class="form-select " title="Select the length of your password. " onclick="S7P( false ); ">
-                    <optgroup label="Weak ">
-                        <option value="6 ">6</option>
-                        <option value="7 ">7</option>
-                        <option value="8 ">8</option>
-                        <option value="9 ">9</option>
-                        <option value="10 ">10</option>
+        <div class="mb-3 mt-3 row">
+            <label for="passwordRange" class="col-sm-2 col-form-label">Select Password Range : </label>
+            <div class="col-sm-10">
+                <select id="passwordRange" class="form-select" title="Select the length of your password." onclick="S7P( false );">
+                    <optgroup label="Weak">
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
                     </optgroup>
-                    <optgroup label="Strong ">
-                        <option value="16 ">16</option>
-                        <option value="17 ">17</option>
-                        <option value="18 ">18</option>
-                        <option value="19 ">19</option>
-                        <option value="20 ">20</option>
-                        <option value="21 ">21</option>
-                        <option value="22 ">22</option>
-                        <option value="23 ">23</option>
-                        <option value="24 ">24</option>
-                        <option value="25 ">25</option>
-                        <option value="26 ">26</option>
-                        <option value="27 ">27</option>
-                        <option value="28 ">28</option>
-                        <option value="29 ">29</option>
-                        <option value="30 ">30</option>
-                        <option value="31 ">31</option>
-                        <option value="32 ">32</option>
-                        <option value="33 ">33</option>
-                        <option value="34 ">34</option>
-                        <option value="35 ">35</option>
-                        <option value="36 ">36</option>
-                        <option value="37 ">37</option>
-                        <option value="38 ">38</option>
-                        <option value="39 ">39</option>
-                        <option value="40 ">40</option>
+                    <optgroup label="Strong">
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
                     
                     </optgroup>
                 </select>
             </div>
         </div>
-        <div class="mb-3 row ">
-            <label for="symbols " class="col-sm-2 col-form-label "> Include Symbols : </label>
-            <div class="col-sm-10 ">
-                <div class="form-check ">
-                    <input class="form-check-input values " type="checkbox " value="!@#$%^&*(),./?];:}" name="password " id="symbols " checked>
-                    <label class="form-check-label " for="symbols ">
+        <div class="mb-3 row">
+            <label for="symbols" class="col-sm-2 col-form-label"> Include Symbols : </label>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input values" type="checkbox" value="!@#$%^&*(),./?];:}" name="password" id="symbols" checked>
+                    <label class="form-check-label" for="symbols">
                         ( e.g. @#$% )
                     </label>
                 </div>
             </div>
         </div>
-        <div class="mb-3 row ">
-            <label for="numbers " class="col-sm-2 col-form-label "> Include Numbers : </label>
-            <div class="col-sm-10 ">
-                <div class="form-check ">
-                    <input class="form-check-input values " type="checkbox " value="0123456789 " name="password " id="numbers " checked>
-                    <label class="form-check-label " for="numbers ">
+        <div class="mb-3 row">
+            <label for="numbers" class="col-sm-2 col-form-label"> Include Numbers : </label>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input values" type="checkbox" value="0123456789" name="password" id="numbers" checked>
+                    <label class="form-check-label" for="numbers">
                         ( e.g. 12843)
                     </label>
                 </div>
             </div>
         </div>
-        <div class="mb-3 row ">
-            <label for="uppercase " class="col-sm-2 col-form-label "> Include UpperCase : </label>
-            <div class="col-sm-10 ">
-                <div class="form-check ">
-                    <input class="form-check-input values " type="checkbox " value="ABCDEFGHIJKLMNOPQRSTUVWXYZ " name="password " id="uppercase " checked>
-                    <label class="form-check-label " for="uppercase ">
+        <div class="mb-3 row">
+            <label for="uppercase" class="col-sm-2 col-form-label"> Include UpperCase : </label>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input values" type="checkbox" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ" name="password" id="uppercase" checked>
+                    <label class="form-check-label" for="uppercase">
                         ( e.g. ABCDEF)
                     </label>
                 </div>
             </div>
         </div>
-        <div class="mb-3 row ">
-            <label for="lowercase " class="col-sm-2 col-form-label "> Include LowerCase : </label>
-            <div class="col-sm-10 ">
-                <div class="form-check ">
-                    <input class="form-check-input values " type="checkbox " value="abcdefghijklmnopqrstuvwxyz " name="password " id="lowercase " checked>
-                    <label class="form-check-label " for="lowercase ">
+        <div class="mb-3 row">
+            <label for="lowercase" class="col-sm-2 col-form-label"> Include LowerCase : </label>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input class="form-check-input values" type="checkbox" value="abcdefghijklmnopqrstuvwxyz" name="password" id="lowercase" checked>
+                    <label class="form-check-label" for="lowercase">
                         ( e.g. abcde)
                     </label>
                 </div>
             </div>
         </div>
 
-        <div class="mb-3 ">
-            <button class="btn btn-primary " onclick="generatePassword() ">Generate My Password</button>
+        <div class="mb-3">
+            <button class="btn btn-primary" onclick="generatePassword()">Generate My Password</button>
         </div>
-        <div class="mb-3 row ">
+        <div class="mb-3 row">
             <p>Your New Password :</p>
-            <div class="col-12 ">
-                <input class="form-control " type="text " value=" " id="passwordShow " checked>
-                <button id="copypassword " class="btn btn-primary mt-3 " onclick="copy() ">Copy Password</button>
+            <div class="col-12">
+                <input class="form-control" type="text" value="" id="passwordShow" checked>
+                <button id="copypassword" class="btn btn-primary mt-3" onclick="copy()">Copy Password</button>
             </div>
         </div>
-        <div class="credit mt-3 ">
-            <p class="text-center blockquote-footer ">Made with Love ❤❤ By <span><b>Harshit Jain</b></span> </p>
+        <div class="credit mt-3">
+            <p class="text-center blockquote-footer">Made with Love ❤❤ By <span><b>Harshit Jain</b></span> </p>
         </div>
     </div>
 
@@ -125,8 +125,8 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
-    <script src="app.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
